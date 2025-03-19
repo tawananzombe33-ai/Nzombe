@@ -1,4 +1,4 @@
-🙋Mr b² smile🙋
+Mr b² smile
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=THANKS FOR YOUR +SUPPORT-DONT; FORGET+TO+FORK+MYrepo;CREATED+BY+Mr b² smile 😁;RELEASED+25.9.2024" alt="Typing SVG" /></a>
 
@@ -10,7 +10,7 @@
  <img alt="Mr b² smile 😁 " height="300" src="https://files.catbox.moe/y05qog.jpg".
 
 </h1> 
-<p align="center">🙋<b>Mr b² smile 😁</b>, 🙋 </p>
+<p align="center"><b>Mr b² smile 😁</b>,  </p>
 
 </p>
   <p align="center">
@@ -26,7 +26,7 @@
 
          **HOW TO DEPLOY**
 1.👇 Star and Fork This Repo  
-[![Star and Fork This Repo](https://img.shields.io/static/v1?label=Star%20%26%20Fork%20This%20Repo&message=GitHub&color=181717&style=for-the-badge&logo=github&logoColor=white)](https://github.com/bmb200/B.M.B_TZ/fork)  
+[![Star and Fork This Repo](https://img.shields.io/static/v1?label=Star%20%26%20Fork%20This%20Repo&message=GitHub&color=181717&style=for-the-badge&logo=github&logoColor=white)](https://github.com/ibra-pixel/Ibupixel-/fork)  
 <br>
     [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=blue&lines=🄵🄾🅁🄺+🄰🄽🄳+🅂🅃🄰🅁+🅁🄴🄿🄾👆)](https://git.io/typing-svg)
 
@@ -56,7 +56,7 @@
 
 **OWNER**
 <p align="centre">
-  <a href="https://wa.me/255711782669">
+  <a href="https://wa.me/255628848298">
     <img align="left" alt="SIEGRIN | Whastapp" width="86px" src="https://raw.githubusercontent.com/PikaBotz/My_Personal_Space/main/Images/AnyaBot_pics/Anya_v2/Whatsapp.svg" />
 
 
@@ -69,7 +69,7 @@
 
 CONTACT DEVELOPER ON WHATSAPP 
 
-<a href="https://wa.me/255711782669" target="_blank">
+<a href="https://wa.me/255628848298" target="_blank">
     <img alt="whatsapp Group" src="https://img.shields.io/badge/Mr b² contact -25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
    
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=blue&lines=CONTACT+ME👆)](https://git.io/typing-svg)
