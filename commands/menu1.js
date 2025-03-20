@@ -34,7 +34,7 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-*MR-B.M.B- MD 💥 AVAILABLE MENUS* 
+*MR-B²* 💥 AVAILABLE MENUS* 
 
 
     ▸ *commander* : ${cm.length} 
@@ -42,8 +42,8 @@ const date = moment().format('DD/MM/YYYY');
     ▸ *uptime* : ${os.platform()}
     ▸ *theme* : *MR-B.M.B-MD*
 
-> MR-B.M.B-MD 💥 WA BOT
-> POWERED BY B.M.B TEAM 💎\n${readmore}`;
+> MR-B² 💥 WA BOT
+> POWERED BY Mr b² TEAM 💎\n${readmore}`;
     
 let menuMsg = `
 > Hello ${nomAuteurMessage},,, Type menu2 to access a list of commands. 
@@ -54,7 +54,7 @@ let menuMsg = `
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *MR-B.M.B-MD*, déveloper b.m.b md bot" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *MR-B.M.B-MD*, déveloper Mr b² smile 😁 bot" , gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -64,7 +64,7 @@ let menuMsg = `
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *MR-B.M.B- MD 💥*, déveloper MR-B.M.B- MD BOT" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Mr b² smile 😁 💥*, déveloper Mr b²smile 😁 BOT" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
