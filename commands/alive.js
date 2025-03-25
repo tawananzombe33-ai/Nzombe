@@ -43,7 +43,7 @@ const date = moment().format('DD/MM/YYYY');
  ${message}
  
  
- *MR-B.M.B-MD-WABOT*`
+ *Mr b² smile 😁*`
 
  if (lien.match(/\.(mp4|gif)$/i)) {
     try {
