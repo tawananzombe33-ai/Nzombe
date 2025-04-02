@@ -22,7 +22,7 @@ zokou({ nomCom: "repo", catégorie:"Général", reaction: "✨", nomFichier: __f
       const lastUpdateDate = new Date(data.updated_at).toLocaleDateString('en-GB');
 
       const gitdata = `*hellow Friend
-this is* *B.M.B-Md.*\n *Follow and support our channel* https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z
+this is* *Mr b² smile 😁-Md.*\n *Follow and support our channel* https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z
 
 🗼 *REPOSITORY:* ${data.html_url}
 💫 *STARS:* ${repoInfo.stars}
