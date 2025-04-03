@@ -9,8 +9,9 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/ibra-pixel/Ibupixel- /root/zokou_BOt
-WORKDIR /root/zokou_Bot/
+RUN  git clone https://github.com/side-smile/Ibupixel-  /root/Hans_BOt
+WORKDIR /root/kinghansmd/
+
 
 
 COPY package.json .
