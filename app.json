@@ -7,7 +7,7 @@
     "baileys",
     "whatsapp"
   ],
-  "logo": "https://files.catbox.moe/vm9usm.jpeg",
+  "logo": "https://files.catbox.moe/y05qog.jpg",
   "repository": "https://github.com/Pkdriller/QUEEN-M",
   "succes_url": "/",
   "stack": "container",
@@ -74,7 +74,7 @@
     },
     "BOT_NAME": {
       "description": "you must give a name for you bot uhh??!!",
-      "value": "Queen-M",
+      "value": "Mr b²",
       "required": false 
     },
     "PUBLIC_MODE": {
@@ -99,12 +99,12 @@
     },
     "OWNER_NAME": {
       "description": "don't you have a name bro.Insert your name here!!",
-      "value": "PkDriller",
+      "value": "Mr b²",
       "required": false
     },
     "URL": {
       "description": "you must add your bot image url.Get your image url now and fill it here",
-      "value": "https://files.catbox.moe/4nt2ds.jpeg",
+      "value": "https://files.catbox.moe/y05qog.jpg",
       "required": true
     },
     "AUTO_READ_MESSAGES": {
@@ -114,7 +114,7 @@
     },
     "NUMERO_OWNER": {
       "description": "Your phone number (exclude '+' and area code, e.g., '2547')",
-      "value": "254736761160",
+      "value": "255628848298",
       "required": false
     },
     "WARN_COUNT": {
