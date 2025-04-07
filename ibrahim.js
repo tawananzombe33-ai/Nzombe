@@ -528,7 +528,7 @@ function mybotpic() {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'Queen-M',
+                pack: 'Mr b²',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -848,7 +848,7 @@ zk.ev.on('group-participants.update', async (group) => {
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
 
-                let cmsg =`*Queen-M Connected Successfully*
+                let cmsg =`*Mr b² Connected Successfully*
 ╭━━━〔 *Mr b²* 〕━━━┈⊷
 ┃★╭──────────────
 ┃★│ *Prefix : [ ${prefixe} ]*
