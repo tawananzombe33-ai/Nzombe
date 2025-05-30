@@ -55,7 +55,7 @@ zokou(
 
     // Reply with ping results
     await zk.sendMessage(dest, {
-      text: '🚀 *Mr b² 🍁🍁 PING* 🚀',
+      text: '🚀 *Mr b² 🍁🍁 ACHA BANGI 🚬* 🚀',
       contextInfo: {
         mentionedJid: [dest.sender || ""],
         externalAdReply: {
