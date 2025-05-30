@@ -1558,7 +1558,7 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log(" bmb tech is connecting...");
+                console.log(" mr-b² tech is connecting...");
             }
             else if (connection === 'open') {
                 console.log("✅ Mr b² Connected to WhatsApp! ☺️");
@@ -1569,11 +1569,11 @@ zk.ev.on('group-participants.update', async (group) => {
                 console.log("------------------/-----");
                 console.log("Mr b² is Online 🕸\n\n");
                 //chargement des commandes 
-                console.log("Loading bmb tech Commands ...\n");
-                fs.readdirSync(__dirname + "/bmbtech").forEach((fichier) => {
+                console.log("Loading mr-b² Commands ...\n");
+                fs.readdirSync(__dirname + "/command").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
-                            require(__dirname + "/bmbtech/" + fichier);
+                            require(__dirname + "/command/" + fichier);
                             console.log(fichier + " Installed Successfully✔️");
                         }
                         catch (e) {
