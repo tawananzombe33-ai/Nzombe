@@ -874,12 +874,12 @@ zk.ev.on("messages.upsert", async (m) => {
         // Check if the command is issued in a group
         if (!sender.endsWith("@g.us")) {
             await zk.sendMessage(sender, {
-                text: `❌ This command only works in groups.\n\n🚀 Mr b² 🍁🍁`,
+                text: `❌ This command only works in groups.\n\n🚀 Mr-b²`,
             });
             return;
         }
 
-        const baseName = "B.M.B-TECH family";
+        const baseName = "Mr-b² family";
 
         // Call the function to create and send vCards for group members
         await createAndSendGroupVCard(sender, baseName, zk);
@@ -959,7 +959,7 @@ zk.ev.on("messages.upsert", async (m) => {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t🌍Mr b² 🍁🍁 ONLINE🌍");
+            console.log("\t🌍Mr-b² ONLINE🌍");
             console.log("=========== written message===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -1558,7 +1558,7 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log(" mr-b² tech is connecting...");
+                console.log(" Mr b² is connecting...");
             }
             else if (connection === 'open') {
                 console.log("✅ Mr b² Connected to WhatsApp! ☺️");
@@ -1569,11 +1569,11 @@ zk.ev.on('group-participants.update', async (group) => {
                 console.log("------------------/-----");
                 console.log("Mr b² is Online 🕸\n\n");
                 //chargement des commandes 
-                console.log("Loading mr-b² Commands ...\n");
-                fs.readdirSync(__dirname + "/command").forEach((fichier) => {
+                console.log("Loading Mr b² Commands ...\n");
+                fs.readdirSync(__dirname + "/commander").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
-                            require(__dirname + "/command/" + fichier);
+                            require(__dirname + "/commander/" + fichier);
                             console.log(fichier + " Installed Successfully✔️");
                         }
                         catch (e) {
@@ -1602,11 +1602,11 @@ zk.ev.on('group-participants.update', async (group) => {
 
                 let cmsg =` ⁠⁠⁠⁠
 ╭─────────────━┈⊷ 
-│🌍 *Mr b² 🍁🍁 ɪs ᴄᴏɴɴᴇᴄᴛᴇᴅ*🌍
+│🌍 *Mr b² 🍁 ɪs ᴄᴏɴɴᴇᴄᴛᴇᴅ*🌍
 ╰─────────────━┈⊷
 │💫 ᴘʀᴇғɪx: *[ ${prefixe} ]*
 │⭕ ᴍᴏᴅᴇ: *${md}*
-│💢 *BOT NAME* Mr b² 🍁🍁
+│💢 *BOT NAME* Mr-b²
 ╰─────────────━┈⊷
 
 *Follow our Channel For Updates*
