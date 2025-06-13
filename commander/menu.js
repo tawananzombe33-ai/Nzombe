@@ -64,7 +64,7 @@ zokou({
         'externalAdReply': {
           'title': "Mr b² 🍁🍁",
           'body': "king boy rah",
-          'thumbnailUrl': "https://files.catbox.moe/z6jrqz.jpg",
+          'thumbnailUrl': "https://files.catbox.moe/lmiar9.jpg",
           'sourceUrl': "https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z",
           'mediaType': 0x1,
           'renderLargerThumbnail': true
@@ -73,7 +73,7 @@ zokou({
     });
     await _0x219205.sendMessage(_0x160fc2, {
       'audio': {
-        'url': "https://files.catbox.moe/raje26.mp3"
+        'url': "https://files.catbox.moe/lmiar9.jpg"
       },
       'mimetype': "audio/mp4",
       'ptt': true,
@@ -88,7 +88,7 @@ zokou({
         'forwardingScore': 0x3e7,
         'externalAdReply': {
           'body': "Mr b² 🍁🍁",
-          'thumbnailUrl': "https://files.catbox.moe/z6jrqz.jpg",
+          'thumbnailUrl': "https://files.catbox.moe/lmiar9.jpg",
           'sourceUrl': "https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z",
           'rendersmallThumbnail': false
         }
