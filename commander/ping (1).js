@@ -27,7 +27,7 @@ zokou(
   },
   async (dest, zk, commandeOptions) => {
     const name = getName(dest, commandeOptions);
-    const img = 'https://files.catbox.moe/z6jrqz.jpg';
+    const img = 'https://files.catbox.moe/lmiar9.jpg';
     const murl = 'https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z';
 
     // Generate 3 ping results with random numbers
