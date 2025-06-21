@@ -1,101 +1,84 @@
-const {
-  zokou
-} = require(__dirname + "/../framework/zokou");
-const {
-  format
-} = require(__dirname + "/../framework/mesfonctions");
-const os = require('os');
+const util = require('util');
+const fs = require('fs-extra');
+const { zokou } = require(__dirname + "/../framework/zokou");
+const { format } = require(__dirname + "/../framework/mesfonctions");
+const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
-zokou({
-  'nomCom': "menu",
-  'categorie': "Menu"
-}, async (_0x160fc2, _0x219205, _0xe5791b) => {
-  let {
-    ms: _0xb19de,
-    repondre: _0x41afad,
-    prefixe: _0x14d418,
-    nomAuteurMessage: _0x11cbde,
-    mybotpic: _0xd7082a
-  } = _0xe5791b;
-  let {
-    cm: _0x256458
-  } = require(__dirname + "/../framework/zokou");
-  let _0x199ed8 = {};
-  let _0x15c89f = "public";
-  if (s.MODE.toLowerCase() !== "yes") {
-    _0x15c89f = "private";
-  }
-  _0x256458.map(_0x3a2d5b => {
-    if (!_0x199ed8[_0x3a2d5b.categorie]) {
-      _0x199ed8[_0x3a2d5b.categorie] = [];
+const more = String.fromCharCode(8206);
+const readmore = more.repeat(4001);
+
+zokou({ nomCom: "menu", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
+    let { ms, repondre, prefixe, nomAuteurMessage, mybotpic } = commandeOptions;
+    let { cm } = require(__dirname + "/../framework/zokou");
+    let coms = {};
+    let mode = "public";
+
+    if ((s.MODE).toLowerCase() !== "yes") {
+        mode = "private";
     }
-    _0x199ed8[_0x3a2d5b.categorie].push(_0x3a2d5b.nomCom);
-  });
-  moment.tz.setDefault("Africa/Dar Es Salam");
-  const _0x4c271f = moment().hour();
-  let _0x57980c = "🌆Good morning";
-  if (_0x4c271f >= 12 && _0x4c271f < 18) {
-    _0x57980c = "🌆Good Afternoon";
-  } else {
-    if (_0x4c271f >= 18) {
-      _0x57980c = "🌆Good everything";
-    } else if (_0x4c271f >= 22 || _0x4c271f < 5) {
-      _0x57980c = "🌆Good night";
-    }
-  }
-  ;
-  moment.tz.setDefault("Etc/GMT");
-  const _0x483331 = moment().format("DD/MM/YYYY");
-  let _0x2b004d = "\n *Hello👏:* *" + _0x57980c + "*\n\n╭┈┈┈┈┈┈┈┈┈┈┈┈⊷\n┊▸ *ʙᴏᴛ ᴏᴡɴᴇʀ : Mr b² 🍁🍁*\n┊▸ *ᴘʀᴇғɪx :* [ " + s.PREFIXE + " ]\n┊▸ *ᴍᴏᴅᴇ :* " + _0x15c89f + "\n┊▸ *ᴅᴀᴛᴇ :* " + _0x483331 + "\n┊▸ *ᴘʟᴀᴛғᴏʀᴍ :* " + os.platform() + "\n┊▸ *ᴄᴏᴍᴍᴀɴᴅꜱ :* " + _0x256458.length + "\n┊▸ *ʀᴀᴍ :* " + format(os.totalmem() - os.freemem()) + '/' + format(os.totalmem()) + "\n╰┈┈┈┈┈┈┈┈┈┈┈⊷\n\n";
-  let _0x3eb70a = "*𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒*";
-  for (const _0x1a3082 in _0x199ed8) {
-    _0x3eb70a += "\n*「 " + _0x1a3082 + " 」*\n╭┈┈┈┈┈┈┈┈┈┈┈⊷ ";
-    for (const _0x410fe3 of _0x199ed8[_0x1a3082]) {
-      _0x3eb70a += " \n┊▸ " + _0x410fe3;
-    }
-    _0x3eb70a += "\n╰┈┈┈┈┈┈┈┈┈┈┈⊷";
-  }
-  _0x3eb70a += "\n> Made By boy king Mr b² 🍁🍁\n";
-  try {
-    await _0x219205.sendMessage(_0x160fc2, {
-      'text': _0x2b004d + _0x3eb70a,
-      'contextInfo': {
-        'externalAdReply': {
-          'title': "Mr b² 🍁🍁",
-          'body': "king boy rah",
-          'thumbnailUrl': "https://files.catbox.moe/lmiar9.jpg",
-          'sourceUrl': "https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z",
-          'mediaType': 0x1,
-          'renderLargerThumbnail': true
+
+    cm.map((com) => {
+        if (!coms[com.categorie]) {
+            coms[com.categorie] = [];
         }
-      }
+        coms[com.categorie].push(com.nomCom);
     });
-    await _0x219205.sendMessage(_0x160fc2, {
-      'audio': {
-        'url': "https://files.catbox.moe/lmiar9.jpg"
-      },
-      'mimetype': "audio/mp4",
-      'ptt': true,
-      'caption': "Mr b² 🍁🍁 SONG",
-      'contextInfo': {
-        'isForwarded': true,
-        'forwardedNewsletterMessageInfo': {
-          'newsletterJid': "120363382023564830@newsletter",
-          'newsletterName': "Mr b² 🍁🍁",
-          'serverMessageId': -1
-        },
-        'forwardingScore': 0x3e7,
-        'externalAdReply': {
-          'body': "Mr b² 🍁🍁",
-          'thumbnailUrl': "https://files.catbox.moe/lmiar9.jpg",
-          'sourceUrl': "https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z",
-          'rendersmallThumbnail': false
+
+    moment.tz.setDefault('Etc/GMT');
+    const temps = moment().format('HH:mm:ss');
+    const date = moment().format('DD/MM/YYYY');
+
+    let infoMsg = `
+╭━━✧MR-B²✧━━❖
+┊✺┌────••••────⊷
+┃✇│◎ 𝙾𝚠𝚗𝚎𝚛 : ${s.OWNER_NAME}
+┃✇│◎ 𝙿𝚛𝚎𝚏𝚒𝚡 : [ ${s.PREFIXE} ]
+┃✇│◎ 𝙼𝚘𝚍𝚎 : ${mode}
+┃✇│◎ 𝚁𝚊𝚖  : 8/132 GB
+┃✇│◎ 𝙳𝚊𝚝𝚎  : ${date}
+┃✇│◎ 𝙿𝚕𝚊𝚝𝚏𝚘𝚛𝚖 : ${os.platform()} 
+┃✇│◎ 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 : ${cm.length}
+┃✇│ 𝚃𝚑𝚎𝚖𝚎 : mr b²
+┊   └────••••────⊷
+╰━━━••✧Mr b²✧••━━━◆ \n`;
+
+    let menuMsg = `Mr b²`;
+    
+    for (const cat in coms) {
+        menuMsg += `
+╭━━━❂ *${cat}* ❂⁠⁠⁠⁠━━─••
+║╭━━══••══━━••⊷ `;
+        for (const cmd of coms[cat]) {
+            menuMsg += `          
+║┊◆ ${s.PREFIXE}  *${cmd}*`;    
         }
-      }
-    });
-  } catch (_0x4819a5) {
-    console.log("Error fetching data:", error);
-    _0x41afad("❌ Error fetching repository data. Please try again later.");
-  }
+        menuMsg += `
+║╰━━══••══━━••⊷
+╰════────════◆◆◆`;
+    }
+    
+    menuMsg += `
+> @Mr b²\n`;
+
+    try {
+        const senderName = nomAuteurMessage || message.from;  // Use correct variable for sender name
+        await zk.sendMessage(dest, {
+            text: infoMsg + menuMsg,
+            contextInfo: {
+                mentionedJid: [senderName],
+                externalAdReply: {
+                    title: "Mr b²",
+                    body: "Tap here my friend join channel update",
+                    thumbnailUrl: "https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z",
+                    sourceUrl: "https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z",
+                    mediaType: 1,
+                    renderLargerThumbnail: true
+                }
+            }
+        });
+    } catch (error) {
+        console.error("Menu error: ", error);
+        repondre("🥵🥵 Menu error: " + error);
+    }
 });
