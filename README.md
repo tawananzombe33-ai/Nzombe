@@ -1,4 +1,4 @@
-Mr b² smile 😁
+Nzombe smile 😁
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=THANKS FOR YOUR +SUPPORT-DONT; FORGET+TO+FORK+MY REPO;CREATED+BY+Mr b² smile 😁;RELEASED+25.9.2024" alt="Typing SVG" /></a>
 
@@ -6,11 +6,11 @@ Mr b² smile 😁
 
 </p>
  
- <a href="https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z">
- <img alt="Mr b² smile 😁 " height="300" src="https://files.catbox.moe/0kz48q.jpg".
+ 
+ <img alt="Nzombe smile 😁 " height="300" src="https://files.catbox.moe/0kz48q.jpg".
 
 </h1> 
-<p align="center"><b>Mr b² smile 😁</b>,  </p>
+<p align="center"><b>Nzombe smile 😁</b>,  </p>
 
 </p>
   <p align="center">
